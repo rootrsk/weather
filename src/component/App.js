@@ -1,6 +1,5 @@
 import React, { useState ,useEffect} from 'react'
 import Axios from 'axios'
-import request from 'request'
 const forecast = require('../forecast')
 
 const GeoCodeUrl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/'
@@ -18,7 +17,6 @@ function App() {
         const response = await Axios({
             url:url,
             method: 'get',
-            credentials:'no-cors'
             
         })
         const place_name = response.data.features[0].place_name
@@ -30,8 +28,11 @@ function App() {
             console.log(data)
             console.log(error)
         })
+        console.log(r)
+        console.log(url2);
         
     }
+    
     
     
     useEffect(() => {
