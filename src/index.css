@@ -1,13 +1,106 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+body{
+  background-color: #e5e7e7;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  
+}
+.button_prop{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+h1{
+  text-align: center;
+  font-family: Play;
+}
+.main{
+  background-color: rgb(224, 228, 226);
+  display: grid;
+  place-items: center;
+  padding: 50px;
+  border-radius: 4px;
+  box-shadow: -1px 4px 20px rgba(0, 0, 0, 0.2);
+}
+.button{
+  padding: 10px;
+  border-radius: 3px;
+  border:none;
+  background-color: white;
+  box-shadow: -1px 4px 20px rgba(0, 0, 0, 0.2);
+}
+input{
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: -1px 4px 20px rgba(0, 0, 0, 0.2);
+}
+.search{
+  width: 350px;
+  background: transparent;
+}
+input:focus{
+  outline: none;
+  border: none;
+  
+}
+#load{
+  background-color: white;
+  display: grid;
+  place-content: center;
+  font-size: 20px;
+  padding: 7px;
+  border-radius: 5px;
+  box-shadow: -1px 4px 20px rgba(0, 0, 0, 0.2);
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.weather_div{
+  border-radius: 5px;
+  width: 350px;
+}
+
+
+.weathers_details{
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: -1px 4px 20px rgba(0,0,0,0.2);
+  
+}
+
+.location_details{
+  padding: 5px;
+
+}
+
+.main_details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+#temp{
+  font-size:70px;
+  padding:5px;
+  font-family: 'Russo One', sans-serif;
+  font-family: 'Play', sans-serif;
+}
+.other_details{
+  padding:5px;
+
 }
